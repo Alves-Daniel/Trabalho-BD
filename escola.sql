@@ -1,5 +1,3 @@
-
-
 CREATE TABLE Aluno (
 matricula_A int NOT NULL PRIMARY KEY,
 endereco varchar(50) NOT NULL,
@@ -47,7 +45,7 @@ FOREIGN KEY(codigo_D) REFERENCES Disciplina (codigo_D),
 FOREIGN KEY(codigo_T) REFERENCES Turma (codigo_T)
 )
 
-CREATE TABLE Relação_3 (
+CREATE TABLE disciplna_professor (
 matricula_P int NOT NULL,
 cpf_p int(11) NOT NULL,
 codigo_D int NOT NULL,
