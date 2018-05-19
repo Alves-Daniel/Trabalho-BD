@@ -47,7 +47,7 @@ FOREIGN KEY(codigo_D) REFERENCES Disciplina (codigo_D),
 FOREIGN KEY(codigo_T) REFERENCES Turma (codigo_T)
 )
 
-CREATE TABLE Relação_3 (
+CREATE TABLE RelaÃ§Ã£o_3 (
 matricula_P int NOT NULL,
 cpf_p int(11) NOT NULL,
 codigo_D int NOT NULL,
@@ -60,7 +60,7 @@ data_adimissao date NOT NULL,
 matricula_P int NOT NULL,
 cpf_p int(11) NOT NULL,
 cnpj int(14) NOT NULL,
-FOREIGN KEY(cpf_p,,) REFERENCES Professor (matricula_P,cpf_p)/*falha: chave estrangeira*/
+FOREIGN KEY(matricula_P,cpf_p) REFERENCES Professor (matricula_P,cpf_p)
 )
 
 ALTER TABLE Aluno ADD FOREIGN KEY(codigo_T) REFERENCES Turma (codigo_T)
