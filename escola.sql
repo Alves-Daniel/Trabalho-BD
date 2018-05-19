@@ -49,7 +49,7 @@ CREATE TABLE disciplna_professor (
 matricula_P int NOT NULL,
 cpf_p int(11) NOT NULL,
 codigo_D int NOT NULL,
-FOREIGN KEY(cpf_p,,) REFERENCES Professor (matricula_P,cpf_p),
+FOREIGN KEY(matricula_P, cpf_p) REFERENCES Professor (matricula_P,cpf_p),
 FOREIGN KEY(codigo_D) REFERENCES Disciplina (codigo_D)
 )
 
